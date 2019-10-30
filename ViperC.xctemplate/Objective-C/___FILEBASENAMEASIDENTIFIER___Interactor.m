@@ -6,18 +6,20 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
  
-#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
+#import "___VARIABLE_viperModuleName___Interactor.h"
  
-@implementation ___FILEBASENAMEASIDENTIFIER___Interactor
+@implementation ___VARIABLE_viperModuleName___Interactor
 
 #pragma mark - InteractorProtocol
 
-- (void)setOutput:(id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)output {
-	_output = output;
+- (void)setPresenter:(id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)presenter
+{
+    _presenter = presenter;
 }
 
-- (id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)getOutputProtocol {
-	return self.output;
+- (id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)getPresenter
+{
+    return self.presenter;
 }
  
 @end
